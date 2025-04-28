@@ -1,0 +1,851 @@
+/* Generic Styling */
+body {
+    margin: 0 auto;
+}
+
+.playfair-display-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.josefin-sans-font {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Header and Footer */
+
+.desktop-nav {
+    display: none;
+    color: white;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B27C66;
+    padding: 2vh 4%;
+}
+
+.logo {
+    border-radius: 100%;
+    height: 11vh;
+    width: auto;
+}
+
+.title {
+    color: #F7DBA7;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu {
+    background-color: #B27C66;
+    border: none;
+}
+
+.list-styles {
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #B27C66;
+    padding: 5px 2% 5px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F7DBA7;
+}
+
+.jerome {
+    height: 15vh;
+    border-radius: 80%;
+    padding: 1vh 0 1vh 0;
+}
+
+/* Home Page */
+
+main {
+    margin-bottom: 50px; 
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text {
+    background-color: #511C29;
+    text-align: center;
+    color: #F7DBA7;
+    padding: 3vh 5%;
+}
+
+.farmphoto {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.newsletter {
+    background-color: #511C29;
+    box-shadow: 0px 0px 2px 2px black;
+    padding: 1vh 5% 3vh 5%;
+    margin: 10vh 10vw 0 10vw;
+}
+
+.newsletter h3 {
+    text-align: center;
+    color: #F7DBA7;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+
+label {
+    display: block;
+    margin-bottom: 2vh;
+    width: 98.8%;
+    color: #F7DBA7;
+}
+
+.submit {
+    width: 100%;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: black;
+    border-radius: 5px;
+    background-color: #B27C66;
+    color: #F7DBA7;
+}
+
+.submit:hover, .submit:focus {
+    background-color: #F7DBA7;
+    color: #B27C66;
+}
+
+/* About Page */
+
+.bio {
+    margin: 5vh 5% 0 5%;
+    text-align: center;
+    color: black;
+}
+
+.calfs {
+    border-radius: 10px;
+    width: 90%;
+    margin: 5vh 5% 0 5%;
+}
+
+.mission {
+    margin: 5vh 10% 0 10%;
+    background-color: #511C29;
+    color: #F7DBA7;
+    padding: 1vh 3%;
+    border-radius: 10px;
+}
+
+.sustainable-farming {
+    border-radius: 10px;
+    margin: 2vh 10% 0 10%;
+    width: 80%;
+}
+
+.animals {
+    margin: 5vh 5% 0 5%;
+    display: flex;
+    flex-direction: column; 
+    gap: 3vw;
+}
+
+.animals img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.animals h2{
+    text-align: center;
+}
+
+.animals div {
+    background-color: #511C29;
+    padding: 1vh 5%;
+    border-radius: 10px;
+    color: #F7DBA7;
+}
+
+/*Visit Page CSS*/
+
+.hook{
+    margin: 7vh 20%;
+    text-align: center;
+}
+
+.quotes {
+    margin-bottom: 20vh;
+}
+
+.monica{
+    width:50%;
+    margin-left: 7%;
+}
+
+.tejas{
+    float: right;
+    width: 50%;
+    margin-right: 7%;
+}
+
+.grid-container-visit{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    width: 50vw;
+    height: 60vw;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid .5rem;
+    border-radius: 2rem;
+}
+
+/*goats image flip*/
+
+.goats-inner{
+    background-image: url("/images/Baby\ Goats.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .goats-inner{
+    transform: rotateY(180deg);
+}
+
+.goats-inner, .goats-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.goats-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*tour image flip*/
+
+.tour-inner{
+    background-image: url("/images/Hayride\ Tour.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .tour-inner{
+    transform: rotateY(180deg);
+}
+
+.tour-inner, .tour-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tour-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*wine image flip*/
+
+.wine-inner{
+    background-image:url("/images/Wine\ Tasting.png");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .wine-inner{
+    transform: rotateY(180deg);
+}
+
+.wine-inner, .wine-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.wine-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform:rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*Products Page CSS*/
+
+.produce-top{
+    width: 80%;
+    margin: 5vh 10%;
+    text-align: center;
+}
+
+.grid-container-products{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(4 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0vh 5%;
+    margin: 0 5% 0 5%;
+}
+
+.produce{
+    width: 100%;
+    height: 90%;
+    padding: 1vh 5%;
+    border-radius: 30px;
+    perspective: 1000px;
+}
+
+.potatoes{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.soybeans{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.apples{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.berries{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.corn{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.tomatoes{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.zucchini{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.grapes{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+/*potatoes image flip*/
+
+.pot-inner{
+    background-image: url("/images/Red\ Potatoes.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .pot-inner{
+    transform: rotateY(180deg);
+}
+
+.pot-inner, .pot-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.pot-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*soybeans image flip*/
+
+.soy-inner{
+    background-image: url("/images/Soybeans.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .soy-inner{
+    transform: rotateY(180deg);
+}
+
+.soy-inner, .soy-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.soy-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*apples image flip*/
+
+.app-inner{
+    background-image: url("/images/Apple\ Orchard.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .app-inner{
+    transform: rotateY(180deg);
+}
+
+.app-inner, .app-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.app-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*berries image flip*/
+
+.berries-inner{
+    background-image: url("/images/Berries.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .berries-inner{
+    transform: rotateY(180deg);
+}
+
+.berries-inner, .berries-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.berries-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*corn image flip*/
+
+.corn-inner{
+    background-image: url("/images/Corn.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .corn-inner{
+    transform: rotateY(180deg);
+}
+
+.corn-inner, .corn-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.corn-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*tomatoes image flip*/
+
+.toms-inner{
+    background-image: url("/images/Tomatoes.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .toms-inner{
+    transform: rotateY(180deg);
+}
+
+.toms-inner, .toms-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.toms-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*zucchini image flip*/
+
+.chini-inner{
+    background-image: url("/images/Zucchini.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .chini-inner{
+    transform: rotateY(180deg);
+}
+
+.chini-inner, .chini-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.chini-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+/*grapes image flip*/
+
+.grapes-inner{
+    background-image: url("/images/Grapes.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .grapes-inner{
+    transform: rotateY(180deg);
+}
+
+.grapes-inner, .grapes-back{
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grapes-back{
+    background-color:#511C29;
+    color:#F7DBA7;
+    transform: rotateY(180deg);
+    border: solid black;
+    border-radius: 30px;
+    padding: 2vh 5%;
+    width: 90%;
+    height: 93%;
+}
+
+@media screen and (min-width: 1048px) {
+    .main-home {
+        display: grid;
+        grid-template-columns: .7fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0vh 2vw;
+        padding: 5vh 3%;
+    }
+    .farmphoto {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        border-radius: 10px;
+    }
+    .welcome-text {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px 2px black;
+        height: 50%;
+    }
+    .newsletter {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        border-radius: 10px;
+        margin: 0 0;
+    }
+    .nav-container {
+        display: none;
+    }
+    .desktop-nav {
+        display: flex;
+        width: 50%;
+        margin: 0 0;
+    }
+    ul {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-about {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1 fr 1fr 2fr;
+    }
+    .bio {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        margin: 7vh 10% 0 20%;
+    }
+    .calfs {
+        grid-column: 4 / 7;
+        grid-row: 1 / 2;
+        margin: 5vh 10% 0 10%;
+    }
+    .sustainable-farming {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        width: 90%;
+        margin: 5vh 10% 5vh 10%;
+    }
+    .mission {
+        grid-column: 5 / 7;
+        grid-row: 2 / 3;
+        align-self: center;
+    }
+    .animals {
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+        margin: 5vh 10% 0 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: .1fr .75fr .75fr .75fr;
+    }
+    .animals h2 {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+    .Chelsea {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .Chimney {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+    .Pearl {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .Percy {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+    }
+    .Quack {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+    }
+    .grid-container-visit {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card{
+        height: 35vw;
+        width: 25vw;
+    }
+    .grid-container-products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 2vh 5%;
+    }
+    .potatoes {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .soybeans {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    .apples {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+    .berries {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+    .corn {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    .tomatoes {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+    .zucchini {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+    .grapes {
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+}

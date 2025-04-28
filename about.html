@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP126 A4 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
+    <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.min.js">
+    <script src="responsive-nav.js-master/responsive-nav.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body >
+    <header class="playfair-display-font">
+        <a href="index.html"><img class="logo" src="images/BUBCAT Farms Logo.png" alt="logo for Bubcat Farms"></a>
+        <h1 class="title">BUBCAT FARMS</h1>
+        <div class="nav-container">
+            <button class="nav-toggle menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav class="nav-collapse">
+                <ul class="list-styles">
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li class="products"><a href="products.html">Products</a></li>
+                    <li class="visit"><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="desktop-nav">
+            <ul class="list-styles">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="products"><a href="products.html">Products</a></li>
+                <li class="visit"><a href="visit.html">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="josefin-sans-font main-about">
+        <div class="bio">
+            <h3>The heart of Bubcat Farms began beating over 70 years ago, when two young calfs, 
+                Daniel and Catherine, first tilled the soil with little more than a dream. Nestled in a quiet valley, 
+                the farm started with a few cows, rows of corn, and a deep love for the land. Over the decades, 
+                it’s grown — but it’s never lost its roots.</h3>
+            <h3>Today, their descendants work the same fields, raise livestock with care, and grow produce just like the founders did — naturally and with purpose. 
+                Every egg, every harvest, and every jar of jam still carries</h3>
+        </div>
+        <img class="calfs" src="images/Calfs.png" alt="two calfs laying in a field">
+        <div class="mission">
+            <h4>Our Mission:</h4>
+            <p>At Bubcat Farms, our mission is to cultivate wholesome, sustainable food while honoring the land, 
+                supporting our community, and preserving the farming traditions passed down through generations. 
+                We are committed to ethical practices, environmental stewardship, and producing high-quality products that nourish both body and spirit.</p>
+        </div>
+        <img src="images/Sustainable Farming.png" alt="A man farming in a field" class="sustainable-farming">
+        <div class="animals">
+            <h2>Meet Our Animals!</h2>
+            <div class="Chelsea">
+                <h4>Chelsea and Daisy</h4>
+                <img src="images/Chelsea Cow.png" alt="">
+                <p>Chelsea is our oldest animal on the farm at 20 years old. 
+                    She is the sweetest cow you will ever meet and loves to be pet and brushed. 
+                    She is the mother of our newest calf, Daisy.</p>
+            </div>
+            <div Class="Chimney">
+                <h4>Chimney</h4>
+                <img src="images/Chimney Cow.png" alt="">
+                <p>Chimney is our shyest friend. 
+                    He loves to explore and will eat to his heart's delight so make sure to always have food on hand when you're around him.</p>
+            </div>
+            <div class="Pearl">
+                <h4>Pearl</h4>
+                <img src="images/Pearl Sheep.png" alt="">
+                <p>Pearl is quite the independent woman but also a jokster, so keep a cautious eye around her.</p>
+            </div>
+            <div class="Percy">
+                <h4>Percy</h4>
+                <img src="images/Percy Sheep.png" alt="">
+                <p>Percy is the most caring animal you will ever meet. 
+                    Always understanding of others and never makes a nuisance of himself.</p>
+            </div>
+            <div class="Quack">
+                <h4>Quack</h4>
+                <img src="images/Quack Pig.png" alt="">
+                <p>Quack is a clumsy one but lives a happy life walllowing in mud. 
+                    Always have a ball around you because he loves fun games.</p>
+            </div>  
+        </div>
+    </main>
+    <footer class="josefin-sans-font"> 
+        <div >
+            <p>3287 Harvest Ride Road</p>
+            <p>Sweetwater, TN, 37874</p>
+        </div>
+        <div >
+            <p>Bubcatfarms@gmail.com</p>
+            <p>(423) 569-0176</p>
+        </div>
+        <img class="jerome" src="images/Jerome.png" alt="footer image of cow licking nose">
+    </footer>
+    <script>
+        var nav = responsiveNav(".nav-collapse", {
+            customToggle: ".nav-toggle" 
+        });
+        function myFunction(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+</body>
+</html>

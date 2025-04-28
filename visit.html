@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP126 Final Project - Visit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
+    <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.min.js">
+    <script src="responsive-nav.js-master/responsive-nav.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="playfair-display-font">
+    <header class="playfair-display-font">
+        <a href="index.html"><img class="logo" src="images/BUBCAT Farms Logo.png" alt="logo for Bubcat Farms"></a>
+        <h1 class="title">BUBCAT FARMS</h1>
+        <div class="nav-container">
+            <button class="nav-toggle menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav class="nav-collapse">
+                <ul class="list-styles">
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li class="products"><a href="products.html">Products</a></li>
+                    <li class="visit"><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="desktop-nav">
+            <ul class="list-styles">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="products"><a href="products.html">Products</a></li>
+                <li class="visit"><a href="visit.html">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="josefin-sans-font main-visit">
+        <div class="hook">
+            <h2>Experience the charm, taste the freshness, and make memories that grow with the seasons as you get lost in the heartland of Sweetwater, TN </h2>
+        </div>
+        <div class="quotes">
+            <p class="monica">"Absolutey loved our visit to the farm! The produce was fresh, the animals were friends, and the whole place just had this peaceful, welcoming vibe. The kids are already asking when we can go back." - Monica L.</p>
+            <p class="tejas">"This farm is a hidden gem! You can tell the family pours their heart into everything they do. From the delicious homemade jams to the hands-on experineces, it's a beautiful escape from the city" - Tejas V.</p>
+        </div>
+        <div class="grid-container-visit">
+            <div class="card flip-box goats">
+                <div class="goats-inner">
+                    <div class="goats-back">
+                        <h4>Baby goat cuddling</h4>
+                        <p>Get ready for pure joy! Our baby goat cuddling session are the perfect mix of heart-melting cuteness and relaxing country charm. You'll spend time in the pasture or cozy barn snuggling with our friendly, playful baby goats — they're naturally curious, affectionate, and love climbing right into your lap for a cuddle. Whether you're looking to unwind, laugh, or just soak up some adorable goat energy, this is a feel-good experience for all ages. Trust us: once a baby goat nuzzles into your arms, you'll never want to leave.</p>
+                        <a href="">Schedule Your Visit Today!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card flip-box tour">
+                <div class="tour-inner">
+                    <div class="tour-back">
+                        <h4>Farm Hayride Tour</h4>
+                        <p>Climb aboard our classic hay wagon for a scenic, relaxing ride through the heart of the farm! This guided tour takes you across rolling pastures, vibrant fields, and peaceful wooded trails, giving you a behind-the-scenes look at daily life on the farm. You'll meet some of our animals along the way, learn fun facts about our crops and sustainable practices, and soak in the fresh air and countryside views. It is the perfect way to experience the rhythm of farm life — slow, simple, and full of charm. Great for families, couples, school groups, or anyone who just wants a taste of the good life.</p>
+                        <div class="schedule">
+                            <a href="">Schedule Your Visit Today!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card flip-box wine">
+                <div class="wine-inner">
+                    <div class="wine-back">
+                        <h4>Wine Tasting</h4>
+                        <p>Join us for a delightful afternoon of wine tasting at Bubcat Farms! Enjoy the beautiful farm views as you sip and savor — it's a perfect way to unwind and connect with nature. Sample a selection of our finest wines, each crafted with care from our own grapes. Our knowledgeable staff will guide you through the tasting process, sharing the stories behind each bottle and the unique flavors that make our wines special. Whether you're a seasoned wine enthusiast or just starting to explore the world of wine, this experience is sure to please your palate.</p>
+                        <div class="schedule">
+                            <a href="">Schedule Your Visit Today!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="josefin-sans-font"> 
+        <div >
+            <p>3287 Harvest Ride Road</p>
+            <p>Sweetwater, TN, 37874</p>
+        </div>
+        <div >
+            <p>Bubcatfarms@gmail.com</p>
+            <p>(423) 569-0176</p>
+        </div>
+        <img class="jerome" src="images/Jerome.png" alt="footer image of cow licking nose">
+    </footer>
+    <script>
+        var nav = responsiveNav(".nav-collapse", {
+            customToggle: ".nav-toggle" 
+        });
+        function myFunction(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+</body>

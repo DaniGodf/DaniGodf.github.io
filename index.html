@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP126 A4 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
+    <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.min.js">
+    <script src="responsive-nav.js-master/responsive-nav.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="playfair-display-font">
+        <a href="index.html"><img class="logo" src="images/BUBCAT Farms Logo.png" alt="logo for Bubcat Farms"></a>
+        <h1 class="title">BUBCAT FARMS</h1>
+        <div class="nav-container">
+            <button class="nav-toggle menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav class="nav-collapse">
+                <ul class="list-styles">
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li class="products"><a href="products.html">Products</a></li>
+                    <li class="visit"><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="desktop-nav">
+            <ul class="list-styles">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="products"><a href="products.html">Products</a></li>
+                <li class="visit"><a href="visit.html">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="josefin-sans-font main-home"> 
+        <img  class="farmphoto" src="images/Family Farm Photo.png" alt="A farm">
+        <div class="welcome-text">
+            <h4>Welcome to Bubcat Farms — a small, family-owned farm rooted in tradition, sustainability, and a love for the land. 
+                For generations, we’ve grown fresh produce and raised happy animals with care, right here in the heart of the valley.</h4>
+        </div>
+        <div class="newsletter">
+            <h3>Join our Newsletter!</h3>
+            <form method="POST" action="/">
+                <label>
+                Your Name
+                <input type="text" name="name">
+                </label>
+                <label>
+                Email
+                <input type="email" name="email">
+                </label>
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer class="josefin-sans-font"> 
+        <div >
+            <p>3287 Harvest Ride Road</p>
+            <p>Sweetwater, TN, 37874</p>
+        </div>
+        <div >
+            <p>Bubcatfarms@gmail.com</p>
+            <p>(423) 569-0176</p>
+        </div>
+        <img class="jerome" src="images/Jerome.png" alt="footer image of cow licking nose">
+    </footer>
+    <script>
+        var nav = responsiveNav(".nav-collapse", {
+            customToggle: ".nav-toggle" 
+        });
+        function myFunction(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+</body>
+</html>
